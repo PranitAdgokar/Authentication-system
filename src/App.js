@@ -1,7 +1,7 @@
 import "./App.css";
-import {SignupPage} from "./components/SignupPage";
-import PassForget from "./components/PassForget";
-import LoginPage from "./components/LoginPage";
+import { SignupPage } from "../src/Auth/SignupPage";
+import PassForget from "../src/Auth/PassForget";
+import LoginPage from "../src/Auth/LoginPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LoginPage />}/>
-          <Route path="/SignupPage" element={<SignupPage/>}/>
-          <Route path="/PassForget" element={<PassForget/>}/>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/Auth/SignupPage" element={<SignupPage />} />
+          <Route path="/Auth/PassForget" element={<PassForget />} />
         </Routes>
       </BrowserRouter>
     </>
