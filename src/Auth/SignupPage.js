@@ -12,11 +12,15 @@ export function SignupPage() {
           <Link to="/">
             <img
               className="w-8 h-8 mt-7 ml-10"
-              src="/icons-left-64.png"
+              src="/Images/icons-left-64.png"
               alt="back"
             />
           </Link>
-          <img className="h-4/5 ml-6" src="/reg-png.png" alt="Register" />
+          <img
+            className="h-auto max-w-full ml-8 mb-8"
+            src="/Images/reg-png.png"
+            alt="Register"
+          />
         </div>
         <form className=" flex w-2/3 h-full gap-8 mr-8 ">
           {/* <h2 className="ml-36 mt-3 font-sans font-extrabold text-lg ">
@@ -33,7 +37,7 @@ export function SignupPage() {
               Password
             </label>
             <Input type="password" placeholder="Password" id="password" />
-            <Link to="/" className="mt-10 text-red-500 ml-16">
+            <Link to="/" className="mt-10 text-red-500 ml-10">
               Already have Account? log in
             </Link>
           </div>
