@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export function SignupPage() {
   return (
-    <div className="h-screen w-screen flex justify-center items-center bg-black">
+    <div className="flex justify-center mx-auto">
       <div className="glass-morphi container-box w-4/6 h-3/5 rounded-3xl flex justify-between flex-start ">
         <div className="w-2/6">
           <Link to="/">
