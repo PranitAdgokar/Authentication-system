@@ -2,7 +2,7 @@ import React from "react";
 import "../css/LoginPage.css";
 import { Link } from "react-router-dom";
 import Input from "../components/input";
-import ShimmerButton from "../components/button";
+import { Button } from "../components/button";
 
 export default function LoginPage() {
   return (
@@ -26,11 +26,11 @@ export default function LoginPage() {
             Password
           </label>
           <Input type="password" placeholder="Password" id="password" />
-          <ShimmerButton className="shadow-2xl mt-4">
+          <Button className=" bg-gray-950 mt-4">
             <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
               Log in
             </span>
-          </ShimmerButton>
+          </Button>
           <div className="contents text-center">
             <span className="text-gray-300">
               <Link to="../Auth/PassForget">Forget Password?</Link>
